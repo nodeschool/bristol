@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title #{title} - NodeSchool Bristol
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header
+      h1 NodeSchool Bristol
+    .container
+      block introImage
+      block tagline
+      .main-content
+        .introCopy
+          block content
+      .sidebar
+        block sidebar
+    footer
+      p
+        | Running on node with Express, Jade and Stylus.
+      p
+        | SVG icons from 
+        a(href='http://iconmelon.com') IconMelon
+        | .
+    script.
+      var url ='/svg/icons.svg';
+      var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
+      document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
+

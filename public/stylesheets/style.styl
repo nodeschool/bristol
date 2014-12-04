@@ -1,0 +1,170 @@
+/*
+ * Import nib
+ */
+@import 'nib'
+
+/* =======================================
+   Get custom typeface 'Karla' from Google
+   ======================================= */
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+
+/* ========================
+   Nib provides a CSS reset
+   ======================== */
+global-reset()
+
+/*
+ * Store the main color and
+ * background color as variables
+ */
+accent-color = #0055FF
+background-color = #faf9f0
+
+body
+header
+h1
+h2
+h3
+  font-family 'Karla'
+      
+body
+  background-color background-color
+  color #444
+
+header
+  padding 50px 10px
+  color #fff
+  font-size 48px
+  line-height 1.4em
+  text-align center
+  background-color lighten(accent-color, 30%)
+  /* To edit this background, follow this link:
+  http://svgeneration.com/generate/Simple-Sun?background=253f66&beam-color=4d88ff&beam-width=2&beam-count=25&sun-color=FAF9F0&sun-radius=70&sun-x=12&sun-y=100&
+  */
+  background-color #253f66
+  background-image url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJz4KCTxzdmcgeD0nMTIlJyB5PSc1Nicgb3ZlcmZsb3c9J3Zpc2libGUnPgoJCTxnIGlkPSdiJz4KCQkJPGxpbmUgaWQ9J2wnIHgxPScwJScgeDI9JzAnIHkxPScwJyB5Mj0nMTAwMCUnIHN0eWxlPSdzdHJva2U6IzAwNTVmZjsgc3Ryb2tlLXdpZHRoOjI7JyB0cmFuc2Zvcm09J3JvdGF0ZSgwKSB0cmFuc2xhdGUoMCw3MCknLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoMy42KScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoNy4yKScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoMTAuOCknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDE0LjQpJyAvPgoJCQk8dXNlIHhsaW5rOmhyZWY9JyNsJyB0cmFuc2Zvcm09J3JvdGF0ZSgxOCknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDIxLjYpJyAvPgoJCQk8dXNlIHhsaW5rOmhyZWY9JyNsJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNS4yKScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoMjguOCknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDMyLjQpJyAvPgoJCQk8dXNlIHhsaW5rOmhyZWY9JyNsJyB0cmFuc2Zvcm09J3JvdGF0ZSgzNiknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDM5LjYpJyAvPgoJCQk8dXNlIHhsaW5rOmhyZWY9JyNsJyB0cmFuc2Zvcm09J3JvdGF0ZSg0My4yKScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoNDYuODAwMDAwMDAwMDAwMDA0KScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoNTAuNCknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDU0KScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoNTcuNiknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDYxLjIpJyAvPgoJCQk8dXNlIHhsaW5rOmhyZWY9JyNsJyB0cmFuc2Zvcm09J3JvdGF0ZSg2NC44KScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoNjguNCknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDcyKScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoNzUuNjAwMDAwMDAwMDAwMDEpJyAvPgoJCQk8dXNlIHhsaW5rOmhyZWY9JyNsJyB0cmFuc2Zvcm09J3JvdGF0ZSg3OS4yKScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoODIuOCknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDg2LjQpJyAvPgoJCTwvZz4KCQk8dXNlIHhsaW5rOmhyZWY9JyNiJyB0cmFuc2Zvcm09J3JvdGF0ZSg5MCknIC8+CgkJPHVzZSB4bGluazpocmVmPScjYicgdHJhbnNmb3JtPSdyb3RhdGUoMTgwKScgLz4KCQk8dXNlIHhsaW5rOmhyZWY9JyNiJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNzApJyAvPgoJPC9zdmc+Cgk8Y2lyY2xlIGN4PScxMiUnIGN5PSc1Nicgcj0nNzAnIGZpbGw9JyMyNTNmNjYnIC8+Cjwvc3ZnPg==')
+
+.container
+  padding 0 20px
+    
+h1
+h2
+h3
+  font-weight 700
+
+.container
+  max-width 960px
+  margin 50px auto
+  overflow hidden
+
+.introImg img
+  display block
+  width 100%
+  max-width 360px
+  height auto
+  margin 0 auto 60px
+
+h2
+  line-height 1.4em
+  font-size 25px
+  
+h3
+  margin-bottom 10px
+  letter-spacing 1px
+  font-size 17px
+  
+.iconmelon
+.im
+  position relative
+  width 80px
+  height 80px
+  display inline-block
+  float left
+  fill #525151
+  margin-bottom 10px
+  margin-right 20px
+
+.iconmelon:after
+.im:after
+  content ''
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  
+.tagline
+  max-width 650px
+  display block
+  margin 0 auto 100px
+
+.main-content
+  float left
+  width 70%
+  
+  @media screen and (max-width: 999px)
+    display block
+    float none
+    margin 0 auto
+    max-width 700px
+    width: 100%
+  
+  h3
+    display flex
+
+  p
+    margin-bottom 20px
+    
+  .introCopy p
+    margin-bottom:65px
+    
+.sidebar
+  float left
+  width 30%
+  
+  @media screen and (max-width: 999px)
+    display block
+    float none
+    margin-left auto
+    margin-right auto
+    max-width 600px
+    width 100%
+
+  .widget
+    border-radius 3px
+    margin-left 25px
+    background-color rgba(#fff, 0.6)
+    border 1px solid rgba(#fff, 0.9)
+    padding-top 15px
+    
+    @media screen and (max-width: 999px)
+      margin-left 0
+
+    h3
+      text-align center
+      margin 13px 20px 4px
+      padding-bottom 10px
+      border-bottom 2px dotted lighten(accent-color, 30%)
+      border-radius 2px 2px 0px 0px
+      margin-bottom 10px
+      font-weight 700
+    p
+      padding:10px 15px
+  
+p
+  line-height 1.5
+  
+a
+  color #4D88FF
+  text-decoration none
+  
+a:hover
+  transition all 0.3s ease
+  color #0055FF
+  
+footer
+  width 500px
+  margin 100px auto 20px
+  border-top 2px dotted lighten(accent-color, 30%)
+  padding 5px 10px 10px
+  font-size 13px

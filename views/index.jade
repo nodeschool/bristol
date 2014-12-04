@@ -1,0 +1,60 @@
+extend layout
+
+block introImage
+  .introImg
+    img(src="/svg/nodeschool-bristol-logo.svg")
+
+block tagline
+  .tagline
+    h2
+      | Join us in February to learn node.js, an open source, cross-platform runtime environment for server-side and networking applications. Node is part of the MEAN stack; a great way to get into full-stack JavaScript development.
+
+block content
+  .iconmelon
+    svg(viewBox="0 0 32 32")
+     use(xlink:href="#www")
+  h3
+    | Learn to Code
+  p
+    | Join us and learn to code with us. You'll learn the basics of 
+    a(href='http://nodejs.org') node.js
+    | . It's a plus if you know some JavaScript beforehand, but if not we can help you out.
+  .iconmelon
+    svg(viewBox="0 0 32 32")
+     use(xlink:href="#sprout")
+  h3
+    | Self-guided
+  p 
+    | You will go through a set of self-paced challenges. No boring talks. All challenges are Open Source and available online on 
+    a(href='http://nodeschool.io/') nodeschool.io
+    |. This means you can continue learning after the event.
+  .iconmelon
+    svg(viewBox="0 0 32 32")
+     use(xlink:href="#friends") 
+  h3
+    | For Everyone
+  p
+    | We think coding is for everyone, and everyone should feel welcome at our event. This means that we are expecting all participants to be lovely to each other and respect the 
+    a(href='https://github.com/nodeschool/berlin/blob/master/codeofconduct.md') code of conduct
+    | .
+
+block sidebar
+  .widget
+    h3 Join the Adventure!
+    p
+      | Reserve your space and keep up-to-date on our 
+      a(href='http://www.meetup.com/NodeSchool-Bristol') Meetup page
+      | .    
+    p
+      | Chat with us on 
+      a(href='https://gitter.im/nodeschool/bristol') Gitter
+      | . 
+    p
+      | Keep in touch with the organisers: 
+      a(href='https://twitter.com/kdurrani') Katja, 
+      a(href='https://twitter.com/fiznool') Tom, 
+      a(href='https://twitter.com/labfoo') Adam 
+      | and 
+      a(href='https://twitter.com/perma_design') Tristan
+      | . 
+
