@@ -1,0 +1,272 @@
+/*
+ * Import nib
+ */
+/* =======================================
+   Get custom typeface 'Karla' from Google
+   ======================================= */
+@import url("http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic");
+/* ========================
+   Nib provides a CSS reset
+   ======================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+/*
+ * Store the main color and
+ * background color as variables
+ */
+body,
+header,
+h1,
+h2,
+h3 {
+  font-family: 'Karla';
+}
+body {
+  background-color: #faf9f0;
+  color: #444;
+}
+header {
+  padding: 50px 10px;
+  color: #fff;
+  font-size: 48px;
+  line-height: 1.4em;
+  text-align: center;
+  background-color: #4d88ff;
+/* To edit this background, follow this link:
+  http://svgeneration.com/generate/Simple-Sun?background=253f66&beam-color=4d88ff&beam-width=2&beam-count=25&sun-color=FAF9F0&sun-radius=70&sun-x=12&sun-y=100&
+  */
+  background-color: #253f66;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJz4KCTxzdmcgeD0nMTIlJyB5PSc1Nicgb3ZlcmZsb3c9J3Zpc2libGUnPgoJCTxnIGlkPSdiJz4KCQkJPGxpbmUgaWQ9J2wnIHgxPScwJScgeDI9JzAnIHkxPScwJyB5Mj0nMTAwMCUnIHN0eWxlPSdzdHJva2U6IzAwNTVmZjsgc3Ryb2tlLXdpZHRoOjI7JyB0cmFuc2Zvcm09J3JvdGF0ZSgwKSB0cmFuc2xhdGUoMCw3MCknLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoMy42KScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoNy4yKScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoMTAuOCknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDE0LjQpJyAvPgoJCQk8dXNlIHhsaW5rOmhyZWY9JyNsJyB0cmFuc2Zvcm09J3JvdGF0ZSgxOCknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDIxLjYpJyAvPgoJCQk8dXNlIHhsaW5rOmhyZWY9JyNsJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNS4yKScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoMjguOCknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDMyLjQpJyAvPgoJCQk8dXNlIHhsaW5rOmhyZWY9JyNsJyB0cmFuc2Zvcm09J3JvdGF0ZSgzNiknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDM5LjYpJyAvPgoJCQk8dXNlIHhsaW5rOmhyZWY9JyNsJyB0cmFuc2Zvcm09J3JvdGF0ZSg0My4yKScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoNDYuODAwMDAwMDAwMDAwMDA0KScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoNTAuNCknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDU0KScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoNTcuNiknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDYxLjIpJyAvPgoJCQk8dXNlIHhsaW5rOmhyZWY9JyNsJyB0cmFuc2Zvcm09J3JvdGF0ZSg2NC44KScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoNjguNCknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDcyKScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoNzUuNjAwMDAwMDAwMDAwMDEpJyAvPgoJCQk8dXNlIHhsaW5rOmhyZWY9JyNsJyB0cmFuc2Zvcm09J3JvdGF0ZSg3OS4yKScgLz4KCQkJPHVzZSB4bGluazpocmVmPScjbCcgdHJhbnNmb3JtPSdyb3RhdGUoODIuOCknIC8+CgkJCTx1c2UgeGxpbms6aHJlZj0nI2wnIHRyYW5zZm9ybT0ncm90YXRlKDg2LjQpJyAvPgoJCTwvZz4KCQk8dXNlIHhsaW5rOmhyZWY9JyNiJyB0cmFuc2Zvcm09J3JvdGF0ZSg5MCknIC8+CgkJPHVzZSB4bGluazpocmVmPScjYicgdHJhbnNmb3JtPSdyb3RhdGUoMTgwKScgLz4KCQk8dXNlIHhsaW5rOmhyZWY9JyNiJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNzApJyAvPgoJPC9zdmc+Cgk8Y2lyY2xlIGN4PScxMiUnIGN5PSc1Nicgcj0nNzAnIGZpbGw9JyMyNTNmNjYnIC8+Cjwvc3ZnPg==");
+}
+.container {
+  padding: 0 20px;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+.container {
+  max-width: 960px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.introImg img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 0 auto 60px;
+}
+h2 {
+  line-height: 1.4em;
+  font-size: 25px;
+}
+h3 {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+.iconmelon,
+.im {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  float: left;
+  fill: #525151;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+.iconmelon:after,
+.im:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.tagline {
+  max-width: 650px;
+  display: block;
+  margin: 0 auto 100px;
+}
+.main-content {
+  float: left;
+  width: 70%;
+}
+@media screen and (max-width: 999px) {
+  .main-content {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+  }
+}
+.main-content h3 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.main-content p {
+  margin-bottom: 20px;
+}
+.main-content .introCopy p {
+  margin-bottom: 65px;
+}
+.sidebar {
+  float: left;
+  width: 30%;
+}
+@media screen and (max-width: 999px) {
+  .sidebar {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    width: 100%;
+  }
+}
+.sidebar .widget {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-left: 25px;
+  background-color: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.9);
+  padding-top: 15px;
+}
+@media screen and (max-width: 999px) {
+  .sidebar .widget {
+    margin-left: 0;
+  }
+}
+.sidebar .widget h3 {
+  text-align: center;
+  margin: 13px 20px 4px;
+  padding-bottom: 10px;
+  border-bottom: 2px dotted #4d88ff;
+  -webkit-border-radius: 2px 2px 0px 0px;
+  border-radius: 2px 2px 0px 0px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.sidebar .widget p {
+  padding: 10px 15px;
+}
+p {
+  line-height: 1.5;
+}
+a {
+  color: #4d88ff;
+  text-decoration: none;
+}
+a:hover {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #05f;
+}
+footer {
+  width: 500px;
+  margin: 100px auto 20px;
+  border-top: 2px dotted #4d88ff;
+  padding: 5px 10px 10px;
+  font-size: 13px;
+}
