@@ -1,12 +1,34 @@
-Bristol
-=======
+Basic Express Site
+==================
 
-The NodeSchool chapter for Bristol, UK.
+Site built from tutorial article: [a simple website in node.js with express, jade and stylus](http://www.clock.co.uk/blog/a-simple-website-in-nodejs-with-express-jade-and-stylus).
 
-## Contact ##
+Build
+-----
 
-*   Gitter chat: [![Gitter chat](https://badges.gitter.im/nodeschool/bristol.png)](https://gitter.im/nodeschool/bristol)
+Run this command in console:
 
-## Events ##
+```
+npm install
+```
 
-We're planning an event in February 2015, and we'll keep you updated!
+All dependencies will be downloaded by `npm` to `node_modules` folder.
+
+Run
+---
+
+Run this command in console:
+
+```
+node app.js
+```
+
+or:
+
+```
+nodemon app.js
+```
+
+(if using Nodemon)
+
+Open `http://localhost:3000` to access basic Express Site.
