@@ -1,13 +1,5 @@
-/*
- * Import nib
- */
-/* =======================================
-   Get custom typeface 'Karla' from Google
-   ======================================= */
 @import url("http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic");
-/* ========================
-   Nib provides a CSS reset
-   ======================== */
+
 html,
 body,
 div,
@@ -99,10 +91,6 @@ td {
 a img {
   border: none;
 }
-/*
- * Store the main color and
- * background color as variables
- */
 body,
 header,
 h1,
@@ -143,7 +131,7 @@ h3 {
 .introImg img {
   display: block;
   width: 100%;
-  max-width: 360px;
+  max-width: 320px;
   height: auto;
   margin: 0 auto 60px;
 }
@@ -180,6 +168,28 @@ h3 {
   max-width: 650px;
   display: block;
   margin: 0 auto 100px;
+  text-align:center;
+}
+.tagline h2 {
+  text-align:center;
+  margin-bottom:50px;
+}
+.signUp {
+  background-color:rgb(77, 136, 255);
+  border:1px solid #0055FF;
+  color:#fff;
+  display:block;
+  margin:0 auto;
+  transition:all 0.3s ease-in;
+  border-radius:2px;
+  padding:15px;
+  max-width:200px;
+  font-size:20px;
+  line-height:1.6em;
+}
+.signUp:hover {
+  background-color:#0055FF;
+  color:#fff;
 }
 .main-content {
   float: left;
