@@ -9,4 +9,4 @@ The NodeSchool chapter for Bristol, UK.
 
 ## Events ##
 
-We're planning an event in February 2015, and we'll keep you updated!
+Our event in February 2015 went well, and we'll keep you updated on plans for more!
